@@ -1,0 +1,35 @@
+[project]
+authors = [{name = "iimuz", email = "iz.primary.story+github@gmail.com"}]
+description = "pyannotate-audioを利用したサンプル."
+license = {file = "LICENSE"}
+name = "pyannotate-audio-sample"
+readme = "README.md"
+requires-python = ">=3.10"
+urls = {repository = "https://github.com/iimuz/til/src/til-20231012"}
+version = "1.0.0"
+
+dependencies = [
+  "pyannotate.audio"
+]
+
+[tools.setuptools.package-dir]
+pyannotate_audio_sample = "src"
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "flake8",
+  "flake8-black",
+  "flake8-bugbear",
+  "flake8-docstrings",
+  "flake8-isort",
+  "isort",
+  "mypy",
+]
+test = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=63", "wheel"]
+
+[tool.isort]
+profile = "black"
