@@ -9,7 +9,7 @@ urls = {repository = "https://github.com/iimuz/til/src/til-20231012"}
 version = "1.0.0"
 
 dependencies = [
-  "pyannotate.audio"
+  "pyannote.audio"
 ]
 
 [tools.setuptools.package-dir]
@@ -25,6 +25,7 @@ dev = [
   "flake8-isort",
   "isort",
   "mypy",
+  "types-PyYAML",
 ]
 test = ["pytest"]
 
